@@ -36,13 +36,13 @@
 
   .hero {
     min-height: 100vh;
-    padding-top: 70px
     background: var(--navy);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     overflow: hidden;
+    padding-top: 64px;
   }
   .hero::after {
     content: '';
@@ -312,17 +312,14 @@
 </style>
 </head>
 <body>
-  <!-- HEADER -->
+
+<!-- HEADER -->
 <header style="
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   background: rgba(11,30,61,0.97); backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(201,168,76,.2);
   padding: 12px 40px; display: flex;
-  align-items: center; justify-content: space-between;">
-  <div style="font-family:'Playfair Display',serif; font-size:18px;
-    font-weight:700; color:#C9A84C; letter-spacing:.02em;">
-    
-  </div>
+  align-items: center; justify-content: flex-end;">
   <a href="https://buy.stripe.com/8x214mgEa9rU2XT0Jc8og04"
     style="background:#C9A84C; color:#0B1E3D; font-size:13px;
     font-weight:500; padding:8px 20px; border-radius:4px;
@@ -498,7 +495,7 @@
       <div class="pricing-desc">Pagamento unico · Accesso immediato</div>
       <div class="pricing-strike">Prezzo pieno €49</div>
       <div class="pricing-features">
-        <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>PDF professionale — 20 Pagine, grafica premium</div>
+        <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>PDF professionale — 13 pagine, grafica premium</div>
         <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Art. 67 TUIR commentato lettera per lettera</div>
         <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Tabella ETC con 14 ISIN e TER aggiornati 2026</div>
         <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Matrice di compensazione 8×7 — tutte le combinazioni</div>
@@ -556,8 +553,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 · Guida alla Fiscalità degli Strumenti Finanziari in Italia</p>
-  <p style="margin-top:8px"><a href="#">Privacy Policy</a> · <a href="#">Termini di utilizzo</a> · <a href="mailto:info@mytaxtrade.com">Contatti</a></p>
+  <p>© 2026 · RecuperaMinus.com — Guida alla Fiscalità degli Strumenti Finanziari in Italia</p>
+  <p style="margin-top:8px"><a href="#">Privacy Policy</a> · <a href="#">Termini di utilizzo</a> · <a href="mailto:info@recuperaminus.com">Contatti</a></p>
 </footer>
 
 <!-- STICKY BAR -->
