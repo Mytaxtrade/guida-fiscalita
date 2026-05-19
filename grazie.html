@@ -2,23 +2,102 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Grazie per l'acquisto!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grazie per l'acquisto — MyTaxTrade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; text-align: center;
-           padding: 80px 20px; background: #0B1E3D; color: white; }
-    h1 { color: #C9A84C; font-size: 36px; margin-bottom: 20px; }
-    p  { font-size: 18px; color: rgba(255,255,255,.7); margin-bottom: 40px; }
-    a  { display: inline-block; background: #C9A84C; color: #0B1E3D;
-         font-size: 16px; font-weight: bold; padding: 16px 36px;
-         border-radius: 4px; text-decoration: none; }
-    a:hover { background: #E0BD6A; }
-  </style>
-</head>
-<body>
-  <h1>Grazie per l'acquisto! 🎉</h1>
-  <p>Clicca qui sotto per scaricare subito la tua guida.</p>
-  <a href="Guida_Fiscalita_Completa_Italia_2026.pdf" download>
-    ⬇️ Scarica la Guida PDF
-  </a>
-</body>
-</html>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #0B1E3D;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .card {
+      background: linear-gradient(135deg, #142444 0%, #1A2F5E 100%);
+      border: 1px solid rgba(201,168,76,.3);
+      border-radius: 16px;
+      padding: 56px 48px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: #C9A84C;
+    }
+    .icon {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #C9A84C;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,.7);
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #C9A84C;
+      color: #0B1E3D;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 18px 40px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all .2s ease;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .download-btn:hover {
+      background: #E0BD6A;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(201,168,76,.3);
+    }
+    .warning {
+      background: rgba(201,168,76,.1);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: rgba(255,255,255,.7);
+      line-height: 1.6;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .warning strong { color: #C9A84C; }
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #C9A84C;
+      margin: 28px auto;
+      opacity: .4;
+    }
+    .support {
+      font-size: 13px;
+      color: rgba(255,255,255,.4);
+      line-height: 1.7;
+    }
+    .support a {
+      color: #C9A84C;
+      text-decoration: none;
+    }
